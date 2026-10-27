@@ -49,9 +49,9 @@ export default class InterconnectClient {
             throw new Error("Connection already in progress.");
         }
 
-        if (!app.canIUse("@system.interconnect")) {
-            throw new Error("Interconnect API unavailable.");
-        }
+        // if (!app.canIUse("@system.interconnect")) {
+        //     throw new Error("Interconnect API unavailable.");
+        // }
 
         this.connecting = true;
         this.conn = interconnect.instance();
